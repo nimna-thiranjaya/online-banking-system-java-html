@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+    <servlet>
+    	<servlet-name>transaction</servlet-name>
+    	<servlet-class>com.transaction.transactionservlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>transaction</servlet-name>
+    	<url-pattern>/transaction</url-pattern>
+    </servlet-mapping>
+         
+         
+    <servlet>
+   	<servlet-name>transactionDetails</servlet-name>
+    <servlet-class>com.transaction.transactionDetailservlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>transactionDetails</servlet-name>
+    	<url-pattern>/transactionDetails</url-pattern>
+    </servlet-mapping>
+         
+    <servlet>
+   	<servlet-name>showDetails</servlet-name>
+    <servlet-class>com.transaction.dataReadServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>showDetails</servlet-name>
+    	<url-pattern>/showDetails</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+   	<servlet-name>updateTransaction</servlet-name>
+    <servlet-class>com.transaction.updateTransactionServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>updateTransaction</servlet-name>
+    	<url-pattern>/updateTransaction</url-pattern>
+    </servlet-mapping>
+         
+         
+         <servlet>
+   	<servlet-name>ShowCancelTransaction</servlet-name>
+    <servlet-class>com.transaction.ShowCancelTransactionServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>ShowCancelTransaction</servlet-name>
+    	<url-pattern>/ShowCancelTransaction</url-pattern>
+    </servlet-mapping>
+    
+    	<servlet>
+   	<servlet-name>cancelTransaction</servlet-name>
+    <servlet-class>com.transaction.cancelTransactionServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>cancelTransaction</servlet-name>
+    	<url-pattern>/cancelTransaction</url-pattern>
+    </servlet-mapping>
+         
+</web-app>
